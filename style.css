@@ -311,7 +311,23 @@ body{
     }
 
     .student-image{
+        width:70px;
+        height:90px;
+        border:1px dashed rgba(73,255,179,0.45);
+        border-radius:10px;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        overflow:hidden; /* ← 重要：はみ出し防止 */
+        background:rgba(255,255,255,0.03);
+    }
+
+    .student-image img{
         width:100%;
-        height:80px;
+        height:100%;
+        object-fit:contain;  /* ← ここがポイント */
+        display:block;
     }
 }
