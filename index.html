@@ -1,0 +1,89 @@
+<!-- website/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICT LAB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER（そのまま） -->
+    <header class="hero">
+
+        <h1>ICT LAB</h1>
+
+        <p>Student & Instructor Portfolio Directory</p>
+
+    </header>
+
+    <!-- FIXED CONTROL BAR -->
+    <div class="control-wrapper">
+
+        <div class="control-panel">
+
+            <div class="search-box">
+                <label>Search</label>
+                <input type="text" id="searchInput" placeholder="name / ID / course">
+            </div>
+
+            <div class="filter-box">
+                <label>Filter</label>
+
+                <div class="filter-buttons">
+
+                    <button onclick="setFilter('all')">All</button>
+                    <button onclick="setFilter('students')">Students</button>
+                    <button onclick="setFilter('instructors')">Instructors</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN SCROLL AREA -->
+    <div class="main-content">
+
+        <section class="section-title-area">
+            <h2 class="section-title">Students</h2>
+        </section>
+
+        <main class="container" id="student-container"></main>
+
+        <section class="section-title-area">
+            <h2 class="section-title">ICT Instructors</h2>
+        </section>
+
+        <section class="container" id="instructor-container"></section>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 ICT LAB</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
