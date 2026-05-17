@@ -98,9 +98,6 @@ body{
 
     border-radius:20px;
 
-    border:
-        2px dashed rgba(73,255,179,0.4);
-
     display:flex;
 
     justify-content:center;
