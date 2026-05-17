@@ -320,8 +320,8 @@ body{
 .student-image{
     width:70px;
     height:90px;
-    border:1px dashed rgba(73,255,179,0.45);
-    border-radius:10px;
+
+    border:none;  /* ← これに変更 */
 
     display:flex;
     justify-content:center;
