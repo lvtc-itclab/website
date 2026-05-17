@@ -303,3 +303,15 @@ body{
         gap:10px;
     }
 }
+
+@media (max-width:480px){
+    .student-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .student-image{
+        width:100%;
+        height:80px;
+    }
+}
