@@ -191,3 +191,15 @@ function renderAll(){
     generateStudentCards();
     generateInstructorCards();
 }
+
+const PASSWORD = "2025"; // ←好きに変更
+
+function checkPassword(){
+    const input = document.getElementById("passwordInput").value;
+
+    if(input === PASSWORD){
+        document.getElementById("login-overlay").style.display = "none";
+    } else {
+        document.getElementById("errorMsg").innerText = "Wrong password";
+    }
+}
